@@ -137,9 +137,9 @@ var styleSheetHandle = document.styleSheets[0]
 
 
 // adds the required rules
-addCssRule( ".attentionWhorestatusToggle", "padding:4px;width:8px;height:8px;cursor:pointer;border:0;margin-right:2px;background:#000;-moz-border-radius:4px;" )
+addCssRule( ".attentionWhorestatusToggle", "padding:4px;width:8px;height:8px;cursor:pointer;border:0;margin-right:2px;background:#000;border-radius:4px;" )
 addCssRule( ".attentionWhorestatusToggle:hover", "padding:2px;width:12px;height:12px;cursor:pointer;" )
-addCssRule( "#attentionWhoresDisplayToggle", "position:fixed;left:4px;top:4px;background:#000;-moz-border-radius:7px;color:#fff;cursor:pointer;padding:4px;font:18px system;border:2px solid #396BA5;" )
+addCssRule( "#attentionWhoresDisplayToggle", "position:fixed;left:4px;top:4px;background:#000;border-radius:7px;color:#fff;cursor:pointer;padding:4px;font:18px system;border:2px solid #396BA5;" )
 addCssRule( "#attentionWhoresDisplayToggle img", "width:16px;height:16px;padding:4px;vertical-align:middle;text-align:center;" )
 addCssRule( "#attentionWhoresDisplayToggle:hover img", "width:24px;height:24px;padding:0px;" )
 addCssRule( "#attentionWhoresDisplayToggle span, #attentionWhoresDisplayToggle div, body.hide_attention_whores .attentionWhorestatusToggle", "display:none;" )
