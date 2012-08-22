@@ -10,7 +10,7 @@
 !(function()
 {	//	replace screenshot by embeded YT capture if possible
 	var screenshot = document.querySelector('img[src^="screenshots/"][title^="screenshot added on the "]');
-	var yt = screenshot && document.querySelector('#mainDownload ~ a[href^="http://"][href*="youtu"]');
+	var yt = screenshot && document.querySelector('#mainDownload ~ a[href*="v="][href*="youtu"]');
 	if( yt )
 	{
 		var i=document.createElement('iframe');
