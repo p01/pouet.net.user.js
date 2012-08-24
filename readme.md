@@ -19,5 +19,9 @@ I started this user.js back in January 2005 to address this. Yes, that code is o
 
 The demoscene goes on a wide and wild range of platform that's not available to everyone. Thankfully many demos are captured and uploaded on Youtube. This user.js replaced the screenshot by the embedded Youtube video whenever possible.
 
+## prodScreenshot
+
+Adds the corresponding thumbnail inside each link to a prod. This work on all pages but the index which would get too busy.
+Note that it uses multiple background images to try the three most common image formats. Pouet.net uses ETAGs, so the servers should not blink despite this rather brutal approach.
 
 That's all folks
