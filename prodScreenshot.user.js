@@ -28,9 +28,9 @@
 		// create a span with multiple background images, thus trying to load the screenshot in the most common image formats.
 		// NB: Pouet.net uses ETAGs. The servers should not blink despite this rather brutal approach.
         var s = document.createElement('span');
-        s.style.cssText='display:block;width:100px;height:75px;margin:4px 4px 0 0;'+
+        s.style.cssText='display:inline-block;vertical-align:middle;width:100px;height:75px;margin:4px 4px 0 0;'+
         	'background:no-repeat center center;background-size:contain;background-image:'+
             ext.map(function(v){ return 'url("/screenshots/'+id+'.'+v+'")'})+';';
-        link.appendChild(s);
+        link.insertBefore(s,link.firstChild);
     }
 })();
