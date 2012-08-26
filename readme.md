@@ -24,4 +24,9 @@ The demoscene goes on a wide and wild range of platform that's not available to 
 Adds the corresponding thumbnail inside each link to a prod. This work on all pages but the index which would get too busy.
 Note that it uses multiple background images to try the three most common image formats. Pouet.net uses ETAGs, so the servers should not blink despite this rather brutal approach.
 
+## unicoder
+
+Time is to unicode on the pouet.net. Yes it is time to replace all these broken &#1337; code by their corresponding character.
+
+
 That's all folks
