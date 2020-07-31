@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name          prodScreenshot
+// @version       0.1
 // @description   Add the corresponding thumbnail inside each link to a prod.
-// @include http://pouet.net/*
-// @exclude http://pouet.net/
-// @exclude http://pouet.net/index.php*
-// @include http://www.pouet.net/*
-// @exclude http://www.pouet.net/
-// @exclude http://www.pouet.net/index.php*
+// @match *://pouet.net/*
+// @exclude *://pouet.net/
+// @exclude *://pouet.net/index.php*
+// @match *://www.pouet.net/*
+// @exclude *://www.pouet.net/
+// @exclude *://www.pouet.net/index.php*
 // @run-at document-end
 // ==/UserScript==
 /*
@@ -25,7 +26,9 @@
         // look for the prod_id and make sure it's different than the previous link
         var id = link.href!=prev.href && (link.href.match(/prod.php\?which=(\d+)$/)||['']).pop();
         if(!id)
+        {
             continue;
+        }
 
         // create a span with multiple background images, thus trying to load the screenshot in the most common image formats.
         // NB: Pouet.net uses ETAGs. The servers should not blink despite this rather brutal approach.

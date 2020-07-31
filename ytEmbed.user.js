@@ -1,8 +1,9 @@
 // ==UserScript==
-// @name          Pouet 'YT embed' | v0.01
+// @name          Pouet 'YT embed'
+// @version       0.01
 // @description	  replace the screenshot of the prods on Pouet.net by the embedded YT capture if possible
-// @include       http://pouet.net/prod.php*
-// @include       http://*.pouet.net/prod.php*
+// @match       *://pouet.net/prod.php*
+// @match       *://*.pouet.net/prod.php*
 // ==/UserScript==
 
 /* (c) August 2012 by Mathieu 'P01' HENRI ( http://www.p01.org ) */
@@ -19,7 +20,7 @@
 		i.height=300;
 		i.frameBorder=0;
 		i.allowfullscreen=1;
-		i.src = 'http://www.youtube.com/embed/'+code;
+		i.src = 'https://www.youtube.com/embed/'+code;
 		screenshot.parentNode.appendChild(i);
 		screenshot.parentNode.removeChild(screenshot);
 	}
