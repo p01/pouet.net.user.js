@@ -10,7 +10,7 @@
 !(function()
 {	//	replace screenshot by embeded YT capture if possible
 	var screenshot = document.querySelector('#screenshot img');
-	var yt = screenshot && document.querySelector('#links a[href*="v="][href*="youtu"]');
+	var yt = screenshot && document.querySelector('#links a[href*="youtu"]');
 	if( yt )
 	{
 		var i=document.createElement('iframe');
